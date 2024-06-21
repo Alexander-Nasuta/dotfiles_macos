@@ -7,7 +7,8 @@
 - link:
 #    ~/.tmux.conf: tmux.conf
 #    ~/.vim: vim
-    ~/.zshrc: zshrc
+    ~/.zshrc:
+    ~/.gitconfig:
 
 - create:
     - ~/downloads
@@ -18,3 +19,9 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  -
+    command: ./setup_homebrew.zsh
+    stdin: true
+    stdout: true
+    description: Installing homebrew 
+#    quiet: flase

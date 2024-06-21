@@ -1,5 +1,11 @@
-# Ser Variables
 
+#################
+# Ser Variables #
+#################
+
+# Syntax highlighting for man pages using bat
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export HOMEBREW_CASK_OPTS="--no-quarantine"
 
 # Change ZSH Options
 
@@ -8,7 +14,10 @@
 ##################
 
 # bypass aliases -> 'command ls' will trigger the original ls command.
-alias ls='ls -Fh' # F -> slash at the end of directories, h -> filesize resonably formatted (only relevant when combined with -l)
+alias lsa='eza -laHF --git' # F -> slash at the end of directories, h -> filesize resonably formatted (only relevant when combined with -l)
+alias ls='eza'
+alias brewdump='brew bundle dump --force --describe --file=~/.dotfiles/Brewfile'
+alias batn='bat --paging=never'
 
 
 #########################
