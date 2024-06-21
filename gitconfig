@@ -1,0 +1,5 @@
+[user]
+	email = alexander.nasuta@ima.rwth-aachen.de
+	name = Alexander Nasuta
+[core]
+	autocrlf = input
