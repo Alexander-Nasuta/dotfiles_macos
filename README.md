@@ -1,3 +1,8 @@
 # dotfiles_macos
 
-first change
+## ToDo
+- Terminal Preferences
+- Git config
+- Homebrew Installation
+
+
